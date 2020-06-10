@@ -1,95 +1,83 @@
-<! DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
-
 <head>
+	<title>Trivia Game</title>
 
-    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta name="viewport" content="width=device-width" initial-scale=1.0">
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<script type="text/javascript" src="assets/javascript/view.js"></script>
+	<script type="text/javascript" src="assets/javascript/model.js"></script>
 
-	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<!-- Link to jQuery CDN -->
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<!-- Link to jQuery UI CDN -->
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
-	<script src="js/app.js"></script>
+	<!-- Link to CSS Reset to Zero out Values for All Browsers -->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
+	<!-- Link to my Style CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Google Fonts -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC|Libre+Baskerville|Oswald" rel="stylesheet"> -->
 
 
 </head>
-
 <body>
 
-	<div class="container">
+	<div class="wrapper">
 
-        <div class="text-center">
+		<div class="container">
 
-            <h1 style="a">Javascript Jeopardy!!</h1>
+			<div class="header">
+				<img id="header-logo" src="assets/images/jeopardy_logo.png" alt="jeopardy_logo">
 
-        </div>
+			</div>
 
-        <br>
+			<div class="stats-bar">
 
-        <br>
+			</div>
 
-        <div class="panel panel-default">
+			<div class="welcome-screen"></div>
 
-            <div class="panel-heading"></div>
+			<div class="restart-screen"></div>
 
-            <div class="panel-body" id="main-board">
+			<div class="game-area">
 
-            </div>
+				<div id="category"></div>
 
-            <div class="panel-footer">
+				<div id="question-value"></div>
 
-                <div class="pull-right"><h4>Score: <span id="score">0</span></h4></div>
+				<div id="question"></div>
 
-                <div class="clearfix"></div>
+				<div id="response-buttons">
 
-            </div>
+					<ul class="response-choices">
 
-        </div>
+					</ul>
+
+				</div>
+
+				<div id="timer">
+
+				</div>
+
+				<div id="dialog-correct-next-question"></div>
+				<div id="dialog-incorrect-next-question"></div>
+				<div id="dialog-times-up-next-question"></div>
+
+
+			</div>
+
+			<div class="clear"></div>
+
+		</div>
+
 
 	</div>
 
-<div class="modal fade" id="question-modal" role="dialog" aria-labelledby="question-modal" aria-hidden="true">
-
-  <div class="modal-dialog">
-
-    <div class="modal-content">
-
-      <div class="modal-header">
-
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-        <h4 class="modal-title">Modal title</h4>
-
-      </div>
-
-      <div class="modal-body">
-
-        <p id="question" style="font-size: 1.5em">One fine body&hellip;</p>
-
-      </div>
-
-      <div class="modal-footer ">
-
-        <div id="answers" class="text-center">
-
-
-
-        </div>
-
-      </div>
-
-    </div><!-- /.modal-content -->
-
-  </div><!-- /.modal-dialog -->
-
-</div><!-- /.modal -->
-
-
-
 </body>
-
 </html>

@@ -1,0 +1,282 @@
+body {
+  width: 1024px;
+  margin: auto;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
+  /* background-image: url('../images/felt.png'); */
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  font-weight: bolder;
+  font-family: serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  text-align: center;
+  font-size: 1em;
+  /*font-family: 'Libre Baskerville', serif;*/
+}
+
+
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+
+  /* Box-model */
+  min-height: 100%;
+
+  /* Positioning */
+  margin: 35px auto -100px;
+  border: solid 5px white;
+  border-radius: 15px;
+}
+
+.header {
+  margin: auto;
+  background-color: blue;
+  text-align: center;
+  border-bottom: solid 5px white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-bottom: 10px;
+}
+
+.header h1 {
+	font-family: 'Oswald', sans-serif;
+	margin-bottom: 0;
+	padding-bottom: 2px;
+	text-shadow: 3px 3px #000;
+}
+
+#header-logo {
+	margin-top: 25px;
+	width: 50%;
+	padding: 0 auto;
+	-webkit-filter: drop-shadow(5px 5px 5px #000);
+  	filter: drop-shadow(5px 5px 5px #000);
+}
+
+.stats-bar {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: blue;
+  background-color: #FEE77B;
+}
+
+.stats-bar li {
+  position: relative;
+  list-style: none;
+  margin: 5px;
+  padding: 0 2em;
+  display: inline-block;
+}
+
+.welcome-screen, .restart-screen {
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  margin: auto;
+  width: 100%;
+}
+
+#playerNameInput {
+  font-size: 2em;
+  text-align: center;
+  border-radius: 15px;
+  border: solid 3px #000;
+}
+
+#button-begin-game, #button-restart-game  {
+  display: block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+  margin: 20px auto;
+  padding: 0 10px;
+  border-radius: 15px;
+  border: solid 3px #fff;
+  background: green;
+
+}
+
+.game-area {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#category {
+	background: blue;
+	border: solid 3px white;
+	border-radius: 15px;
+	width: 50%;
+	padding: 10px;
+	font-size: 2em;
+	font-family: serif;
+	text-shadow: 2px 2px #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 1.3em;
+	margin: 20px auto;
+
+}
+
+#question-value {
+	color: #FEE77B;
+	font-size: 3em;
+	background: blue;
+	border: solid 3px white;
+	border-radius: 15px;
+	padding: 15px;
+	width: 20%;
+	margin: 20px auto;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bolder;
+	text-shadow: 2px 2px #000;
+}
+
+#question {
+	background: blue;
+	border: solid 3px white;
+	border-radius: 15px;
+	width: 50%;
+	padding: 10px;
+	font-size: 2em;
+	font-family: serif;
+	text-shadow: 2px 2px #000;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 1.3em;
+	margin: 20px auto;
+}
+
+/*#correct {
+  color: green;
+}
+
+#correct :hover {
+  background: green;
+}
+
+#incorrect {
+  color: red;
+}
+
+#incorrect :hover {
+  background: red;
+}*/
+
+
+#response-buttons {
+  margin: 15px auto;
+  padding: 10px;
+  max-width: 50%;
+  text-align: center;
+  font-size: 1.5em;
+  text-shadow: 2px 2px #000;
+}
+
+#response-buttons li {
+  list-style: none;
+  padding: 5px 15px;
+  margin-top: 5px;
+  border: solid 2px white;
+  border-radius: 15px;
+  background: blue;
+  font-family: 'Oswald', sans-serif;
+}
+
+#response-buttons li:hover {
+  background: #FEE77B;
+  border: ;
+  color: blue;
+  text-shadow: 2px 2px #fff;
+
+}
+
+#timer {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 5%;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  text-shadow: 2px 2px #000;
+  border: solid 2px white;
+  border-radius: 50px;
+  background: red;
+}
+
+/*.ui-dialog {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+}*/
+
+.ui-dialog {
+  height: auto;
+  margin: 20px auto;
+  padding: 0 20px;
+  text-align: center;
+  border: solid 2px white;
+  border-radius: 15px;
+  color: white;
+  text-shadow: 2px 2px #000;
+  font-family: serif;
+  font-size: 2em;
+  /*background: purple;*/
+
+}
+
+.correct {
+  background: green;
+}
+
+.incorrect {
+  background: red;
+}
+
+.times-up {
+  background: purple;
+}
+
+.ui-dialog-buttonpane {
+
+}
+
+.ui-button {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1em;
+  margin: 20px auto;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.footer {
+  margin: 25px auto;
+  height: 50px;
+}
